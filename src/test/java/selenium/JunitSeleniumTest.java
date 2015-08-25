@@ -21,10 +21,10 @@ public class JunitSeleniumTest {
     public void myTest() throws Exception {
     	
     	WebDriver driver = new RemoteWebDriver(
-                                new URL("http://SeleniumServerIP/wd/hub/"), 
+                                new URL("http://107.189.67.93/wd/hub/"), 
                                 DesiredCapabilities.firefox());
         
-        driver.get("http://WEB_Node_IP/");
+        driver.get("http://www.google.com/");
         
         
         // RemoteWebDriver does not implement the TakesScreenshot class
