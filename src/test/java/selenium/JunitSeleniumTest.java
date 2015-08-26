@@ -21,7 +21,7 @@ public class JunitSeleniumTest {
     public void myTest() throws Exception {
     	
     	WebDriver driver = new RemoteWebDriver(
-                                new URL("http://107.189.67.93/wd/hub/"), 
+                                new URL("http://107.189.67.186/wd/hub/"), 
                                 DesiredCapabilities.firefox());
         
         driver.get("http://www.google.com/");
