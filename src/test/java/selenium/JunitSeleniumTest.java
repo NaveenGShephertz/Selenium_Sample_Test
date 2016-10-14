@@ -24,7 +24,7 @@ public class JunitSeleniumTest {
                                 new URL("http://107.189.120.246/wd/hub/"), 
                                 DesiredCapabilities.firefox());
         
-        driver.get("https://blueapp.iab.app42paas.com/");
+        driver.get("http://www.w3schools.com/html/html_urlencode.asp");
         
          System.out.println(" Dirver Found");
         // RemoteWebDriver does not implement the TakesScreenshot class
@@ -35,7 +35,8 @@ public class JunitSeleniumTest {
                             getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(screenshot, new File("/home/paasadmin/testimage.png"));*/
 	  System.out.println(" Dirver Assert Statement");
-        Assert.assertEquals(driver.getTitle(), "App42 Sample Java-MySql Application");
+      //  Assert.assertEquals(driver.getTitle(), "App42 Sample Java-MySql Application");
+	    Assert.assertEquals(driver.getTitle(), "HTML URL Encoding");
 		System.out.println("Selenium Test Successfull");
 		System.out.println(driver.getTitle());
         
