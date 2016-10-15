@@ -20,7 +20,7 @@ public class JunitSeleniumTest {
     @Test
     public void myTest() throws Exception {
     	
-    	WebDriver driver = new RemoteWebDriver(new URL("http://107.189.120.246/wd/hub/"),DesiredCapabilities.firefox());
+    	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.109.5/wd/hub/"),DesiredCapabilities.firefox());
         
         driver.get("https://blueapp.iab.app42paas.com/");
         
